@@ -9,12 +9,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Please fill out the following information to help us address your design issue.
   - type: input
     id: figma-link
     attributes:
       label: Figma Link
-      description: Provide the corresponding Figma link for our quick reference her
+      description: Provide the corresponding Figma link for our quick reference here.
       placeholder: ex. https://www.figma.com/...
     validations:
       required: false
@@ -22,7 +22,7 @@ body:
     id:
     attributes:
       label: The Procedure of Design Issue Management
-      description: Please provide a detailed description of the issue you are facing.
+      description: Please provide the steps for the design issue.
       placeholder:
       value: |
         1. **Step 1**:
