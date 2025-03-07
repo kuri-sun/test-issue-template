@@ -1,8 +1,8 @@
-name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+name: Design Issue
+description: Please report any design issues you encounter.
+title: "[Design]: "
+labels: ["design"]
+projects: []
 assignees:
   -
 body:
@@ -11,19 +11,22 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: figma-link
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Figma Link
+      description: Provide the corresponding Figma link for our quick reference her
+      placeholder: ex. https://www.figma.com/file/abc123/My-Design-File
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id:
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: The Procedure of Design Issue Management
+      description: Please provide a detailed description of the issue you are facing.
+      placeholder:
+      value: |
+        1. **Step 1**:
+        2. **Step 2**:
+        3. **Step 3**:
     validations:
       required: true
