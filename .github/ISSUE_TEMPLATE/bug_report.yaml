@@ -2,7 +2,7 @@ name: Design Issue
 description: Create a design issue to help us improve our design system.
 title: "[Design]: "
 labels: ["design"]
-# projects: ["tadrill", "<NEW> Design tasks"]
+projects: []
 body:
   - type: markdown
     attributes:
