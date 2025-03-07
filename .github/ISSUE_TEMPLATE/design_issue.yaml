@@ -9,7 +9,7 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: figma link
+    id: figma-link
     attributes:
       label: Figma Link
       description: Provide the corresponding Figma link for our quick reference here.
