@@ -27,29 +27,20 @@ body:
 
         # Child Issues
 
-        ```[tasklist]
         ### Design
         - [ ] (Issue here)
-        ```
 
-        ```[tasklist]
         ### Frontend
         - [ ] (Issue here)
-        ```
 
-        ```[tasklist]
         ### Backend
         - [ ] (Issue here)
-        ```
 
-        ```[tasklist]
         ### Infra
         - [ ] (Issue here)
-        ```
 
-        ```[tasklist]
         ### Other
         - [ ] (Issue here)
-        ```
+
     validations:
       required: true
