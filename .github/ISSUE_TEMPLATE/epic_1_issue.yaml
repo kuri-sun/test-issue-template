@@ -1,0 +1,55 @@
+name: Epic Issue
+description: This is for creating an epic issue.
+title: "[Epic]: "
+labels: [""]
+projects: [""]
+assignees:
+  -
+body:
+  - type: textarea
+    id:
+    attributes:
+      label: The Procedure of Design Issue Management
+      description: Please provide the steps for the design issue.
+      placeholder:
+      value: |
+        # Summary
+
+        <!--- Explain the summary of this Epic. -->
+
+        # User Stories
+
+        - As a [persona], I [want to], [so that].
+
+        # Acceptance Criteria
+
+        <!--- The criteria must be met to satisfy the stakeholders and users. -->
+
+        # Child Issues
+
+        ```[tasklist]
+        ### Design
+        - [ ] (Issue here)
+        ```
+
+        ```[tasklist]
+        ### Frontend
+        - [ ] (Issue here)
+        ```
+
+        ```[tasklist]
+        ### Backend
+        - [ ] (Issue here)
+        ```
+
+        ```[tasklist]
+        ### Infra
+        - [ ] (Issue here)
+        ```
+
+        ```[tasklist]
+        ### Other
+        - [ ] (Issue here)
+        ```
+    validations:
+      required: true
