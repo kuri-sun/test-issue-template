@@ -1,32 +1,44 @@
-name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+name: Design Issue
+description: Create a design issue to help us improve our design system.
+title: "[Design]: "
+labels: ["design"]
+# projects: ["tadrill", "<NEW> Design tasks"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: figma link
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Figma Link
+      description: Provide the corresponding Figma link for our quick reference here.
+      placeholder: ex. https://www.figma.com/file/abc123
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: procedure
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
+      label: The Procedure of Design Issue Management
+      description: Please describe the procedure of the design issue management.
+      placeholder: ex. 1. Open the Figma file. 2. Check the design. 3. ...
+      value: |
+        1. Designers create a "Design" issue for their design work
+         - Label: `kind: design`
+         - Area: `Design` in the [Nobita GitHub Project](https://github.com/orgs/HENNGE/projects/14/views/69)
+         - Designers manage its status (`Inbox` → `Todo` → `In Progress`)
+         1. Designers list this issue as a child issue on the corresponding epic issue in the [HENNGE/nobita2-discovery repo](https://github.com/HENNGE/nobita2-discovery/issues?q=sort:updated-desc+is:issue+is:open+label:%22kind:+epic%22). E.g.: <img width="838" alt="image" src="https://github.com/user-attachments/assets/e334695c-52e8-4cab-a06a-5eee0e93f8e9">
+
+         1. If the feature is big enough, designers create a mockup for discussion and we hold a prior spec grooming session to be on the same page
+         1. Once a hi-fi design work is done and becomes ready for FE review, designers change the Design issue status to `Under Review / Blocked`
+           - Designers can also use this status if there is a blocker for their design work (e.g. It requires more spec clarifications)
+         1. Developers review the design work and if it is good, they give an explicit LGTM comment on this Design issue
+           - Designers move the issue status to `Approved` once they confirmed it is actually reviewed by themselves
+           - Designers can move the status back to `In Progress` if there is a follow-up design work based on the feedback from on-going development
+           - Once an updated design has been confirmed on either GitHub Issue, Slack or Figma (More casual LGTM than the initial FE design review), designers move the issue status to `Approved`
+         1. Once all designers and developers are satisfied with the finalized design, and no more preliminary effort is planned on the designer's side, they can close this Design issue. (The issue's status automatically becomes `Done`)
+      validations:
+        required: true
   - type: dropdown
     id: version
     attributes:
@@ -48,17 +60,3 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
