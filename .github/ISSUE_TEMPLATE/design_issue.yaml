@@ -2,7 +2,7 @@ name: Design Issue
 description: Please report any design issues you encounter.
 title: "[Design]: "
 labels: ["design"]
-projects: []
+projects: ["tadrill", "<NEW> Design tasks"]
 assignees:
   -
 body:
@@ -15,7 +15,7 @@ body:
     attributes:
       label: Figma Link
       description: Provide the corresponding Figma link for our quick reference her
-      placeholder: ex. https://www.figma.com/file/abc123/My-Design-File
+      placeholder: ex. https://www.figma.com/...
     validations:
       required: false
   - type: textarea
@@ -26,7 +26,6 @@ body:
       placeholder:
       value: |
         1. **Step 1**:
-        2. **Step 2**:
-        3. **Step 3**:
+        2. ...
     validations:
       required: true
