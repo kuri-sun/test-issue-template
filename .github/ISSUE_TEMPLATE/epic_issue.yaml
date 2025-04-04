@@ -12,7 +12,7 @@ body:
     attributes:
       label: The Procedure of Epic Issue Management
       description: Please describe the steps for this feature.
-      placeholderea
+      placeholder:
       value: |
         # Summary
 
