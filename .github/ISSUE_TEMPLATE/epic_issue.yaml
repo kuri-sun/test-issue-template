@@ -1,0 +1,47 @@
+name: Epic Issue
+description: This is for creating an epic issue.
+title: '[Epic]: '
+labels: ['epic']
+type: ['Epic']
+projects: ['tadrill']
+assignees:
+  -
+body:
+  - type: textarea
+    id: epic-procedure
+    attributes:
+      label: The Procedure of Epic Issue Management
+      description: Please describe the steps for this feature.
+      placeholderea
+      value: |
+        # Summary
+
+        <!--- Explain the summary of this Epic. -->
+
+        # User Stories
+
+        - As a [persona], I [want to], [so that].
+
+        # Acceptance Criteria
+
+        <!--- The criteria must be met to satisfy the stakeholders and users. -->
+
+        # Child Issues
+
+        ### Design
+        - [ ] (Issue here)
+
+        ### Frontend
+        - [ ] (Issue here)
+
+        ### Backend
+        - [ ] (Issue here)
+
+        ### Infra
+        - [ ] (Issue here)
+
+        ### Other
+        - [ ] (Issue here)
+
+    validations:
+      required: true
